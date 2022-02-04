@@ -1,0 +1,37 @@
+body {
+  background-color: aqua;
+
+  scroll-behavior: smooth;
+}
+
+h1 {
+  display: inline;
+  height: 100px;
+  width: 100px;
+}
+
+strong {
+  display: block;
+}
+
+/* to create a new element not in the html code(inline), called block block-level. Then use div */
+
+div {
+  background-color: brown;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+div {
+  background-image: url("https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg");
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-size: cover;
+}
+/* to create inline element use span */
+
+span {
+  background-color: chartreuse;
+}

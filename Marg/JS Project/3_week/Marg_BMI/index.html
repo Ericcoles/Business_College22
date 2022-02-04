@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>BMI Calc</h1>
+    <p>bla bla</p>
+    <div>
+      <div>
+        <label for="weight">Weight</label>
+        <input
+          type="number"
+          id="weight"
+          placeholder="Enter in Kilograms"
+          value="70"
+        />
+      </div>
+
+      <div>
+        <label for="height">Height</label>
+        <input
+          type="number"
+          id="height"
+          placeholder="Enter in centimeters"
+          value="180"
+        />
+      </div>
+      <!-- <input type="submit" /> This is better but use button for now for learning -->
+      <button onclick="bmiCalc()">Submit</button>
+    </div>
+    <p id="solution"></p>
+    <script src="main.js"></script>
+  </body>
+</html>

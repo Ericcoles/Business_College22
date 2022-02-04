@@ -1,0 +1,31 @@
+body {
+  background-color: rgba(128, 255, 0, 0.561);
+}
+#my_id {
+  color: salmon;
+}
+
+.my_class {
+  color: sandybrown;
+}
+
+.Malay {
+  color: seashell;
+}
+
+#Yes {
+  color: blanchedalmond;
+}
+
+p {
+  font-family: fantasy;
+  font-size: 21px;
+}
+
+/*my awesome comment*/
+
+/* Shift Command 7  */
+
+/* no spaces in CSS, spaces means end  */
+
+/* use _ - or no space or camel case. 1-2 1_2 12 or oneTwo. Try to avoid space in naming. Be consistent with naming as well, all underscore or dash or camelCase. */

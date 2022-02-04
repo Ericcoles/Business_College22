@@ -1,0 +1,12 @@
+/* /* body {
+  background-color: rgba(0, 255, 0, 0.9);
+} 
+color, color, color capacity */
+
+body {
+  background-color: hsla(101, 72%, 46%, 0.685);
+
+  /* } color, how much black (grey scale or not), color itself, alpha channel(capacity) 
+  Also can click the top to get hexadecimal colors */
+
+  /* https://htmlcolorcodes.com/color-names/ */

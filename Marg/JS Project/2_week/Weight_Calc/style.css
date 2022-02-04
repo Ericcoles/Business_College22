@@ -1,0 +1,6 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* It takes first font, and if not available then takes then next one. First tries to take from project, then link, then operation system. 
+some fonts not avaiable in mac and or windows. https://www.cssfontstack.com/, web safe fonts */

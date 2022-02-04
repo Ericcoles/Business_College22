@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+}
+
+img {
+  width: 200px;
+}
+header {
+  background-color: #333;
+  padding: 20px;
+}
+
+body {
+  /* background-image: url("https://previews.123rf.com/images/malydesigner/malydesigner1410/malydesigner141000056/32278325-grunge-gray-background-texture.jpg")(http://source.unsplash.com/shKDOyT2z1U';
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+
+  background-size: cover; */
+  /* background-size: 200px; */
+  /* background-size: contain; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: url("https://previews.123rf.com/images/malydesigner/malydesigner1410/malydesigner141000056/32278325-grunge-gray-background-texture.jpg")
+    no-repeat fixed center/cover;
+}
+
+header {
+  background-color: #333;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+/* display: inline; */
+/* ul is block element li is inline */
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+/* header nav a */
+
+.container {
+  max-width: 1200px;
+  background-color: red;
+  padding: 0px 20px;
+  margin: 0 auto;
+  /* margin:0 auto puts content aligned in center */
+}
+
+/* Table */
+
+table,
+td,
+th {
+  /* border-color: blue;
+  border-width: 2px;
+  border-style: dashed;
+  border-collapse: collapse; */
+  border: 2px dotted blue;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: tomato;
+}
+
+td:first-child {
+  width: 200px;
+}
+
+tr:nth-child(2n) {
+  background-color: green;
+}
+
+tr {
+  background-color: blue;
+}
+
+th {
+  background-color: red;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+  display: inline-block;
+}
+
+.box1 {
+  background-color: greenyellow;
+}
+.box2 {
+  background-color: purple;
+}
+.box3 {
+  background-color: red;
+}
+.box4 {
+  background-color: yellow;
+}
+.box5 {
+  background-color: blue;
+}
+
+/* .container {
+  width: 800px;
+} */
+
+/* 'control a' copies whole page */
+
+/* dotted solid dashed */
