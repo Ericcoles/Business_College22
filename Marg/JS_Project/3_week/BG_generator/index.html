@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Background_Generator</title>
+  </head>
+  <body>
+    <h1>BG Gradient Generator</h1>
+
+    <form>
+      <input class="color1" name="color1" type="color" value="#FF0000" />
+      <input class="color2" name="color2" type="color" value="#FFF700" />
+      <h2>Direction</h2>
+
+      <div>
+        <label for="bottom">To bottom</label>
+        <input
+          type="radio"
+          value="to bottom"
+          name="direction"
+          id="bottom"
+          checked
+        />
+      </div>
+
+      <div>
+        <label for="top">To top</label>
+        <input type="radio" value="to top" name="direction" id="top" />
+      </div>
+
+      <div>
+        <label for="left">To left</label>
+        <input type="radio" value="to left" name="direction" id="left" />
+      </div>
+
+      <div>
+        <label for="right">To right</label>
+        <input type="radio" value="to right" name="direction" id="right" />
+      </div>
+    </form>
+    <script src="main.js"></script>
+
+    <p>
+      body { background-image: linear-gradient(#ff0000, #fff700);
+      background-repeat: no-repeat; background-size: 100%; height: 100vh;
+      font-family: "Raleway", sans-serif; }
+    </p>
+  </body>
+</html>

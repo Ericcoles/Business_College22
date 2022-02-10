@@ -1,0 +1,12 @@
+body {
+  background-image: linear-gradient(to top, red, #96962c70);
+}
+.warning {
+  color: orange;
+}
+.normal {
+  color: green;
+}
+.danger {
+  color: red;
+}
