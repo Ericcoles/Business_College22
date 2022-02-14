@@ -1,0 +1,61 @@
+body {
+  background-color: aquamarine;
+}
+
+h1 {
+  color: white;
+}
+
+h1::after {
+  content: "Some cool text from CSS";
+}
+
+/* Media Queries */
+
+/* Large devices (large desktops, up to 1200px) */
+
+@media (max-width: 1200px) {
+  body {
+    background-color: aquamarine;
+  }
+
+  h1::after {
+    content: "This is up to 1200px";
+  }
+}
+
+/* Large devices (large desktops, up to 992px) */
+
+@media (max-width: 992px) {
+  body {
+    background-color: rgba(66, 66, 253, 0.76);
+  }
+
+  h1::after {
+    content: "This is up to 992px";
+  }
+}
+
+/* Large devices (large tablets, up to 768px) */
+
+@media (max-width: 768px) {
+  body {
+    background-color: blue;
+  }
+
+  h1::after {
+    content: "This is up to 768px";
+  }
+}
+
+/* Large devices (small devices, up to 576px) */
+
+@media (max-width: 576px) {
+  body {
+    background-color: black;
+  }
+
+  h1::after {
+    content: "This is up to 576px";
+  }
+}

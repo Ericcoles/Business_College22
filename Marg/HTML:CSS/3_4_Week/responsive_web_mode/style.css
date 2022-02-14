@@ -1,0 +1,56 @@
+body {
+  background-color: rgb(112, 56, 15);
+}
+
+h1::after {
+  content: "Some cool start below 576px";
+}
+
+/* Media queries */
+
+/* small devices (landscape phones, 576px and up to next breakpoint) */
+
+@media (min-width: 576px) {
+  body {
+    background-color: rgb(158, 79, 23);
+  }
+
+  h1::after {
+    content: "mobile 576-767px";
+  }
+}
+/* Large devices (large desktops, up to 992px) */
+
+@media (min-width: 768px) {
+  body {
+    background-color: rgb(182, 90, 25);
+  }
+
+  h1::after {
+    content: "767-991px";
+  }
+}
+
+/* Large devices (large desktops, up to 1200px) */
+
+@media (min-width: 992px) {
+  body {
+    background-color: rgb(204, 102, 30);
+  }
+
+  h1::after {
+    content: "mobile 991-1199px";
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up to next breakpoint) */
+
+@media (min-width: 1200px) {
+  body {
+    background-color: rgb(228, 114, 32);
+  }
+
+  h1::after {
+    content: "mobile 1200 and up";
+  }
+}

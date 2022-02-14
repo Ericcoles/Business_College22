@@ -1,0 +1,71 @@
+* {
+  margin: o;
+  padding: 0;
+}
+
+body {
+  background-color: cornflowerblue;
+}
+
+header {
+  background-color: rgb(61, 61, 61);
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: space-around; */
+  align-items: center;
+  padding: 2rem;
+  /* 2 rem is 32px  */
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+main {
+  background-color: crimson;
+  height: 50vh;
+  display: flex;
+}
+
+.left {
+  background-color: rgb(69, 102, 163);
+  flex: 1;
+}
+
+.right {
+  background-color: cornsilk;
+  flex: 4;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: row-reverse; */
+}
+
+.box {
+  width: 69px;
+  height: 69px;
+  background-color: crimson;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  /* Box is still 69px and 69px, but now padding is growing outside like clothes or armour.  */
+}
+
+h2 {
+  text-align: center;
+}
+
+footer {
+  height: 25vh;
+  text-align: center;
+}
+
+footer .box {
+  margin: 0 auto;
+}
