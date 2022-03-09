@@ -1,0 +1,11 @@
+* {
+  background-color: crimson;
+}
+
+body {
+  font-family: "Shizuru", cursive;
+}
+
+nav.navi ul li {
+  display: block;
+}

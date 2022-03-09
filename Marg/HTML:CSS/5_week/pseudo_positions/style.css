@@ -1,0 +1,152 @@
+* {
+  background-color: ;
+}
+
+body {
+  background-color: aqua;
+  color: green;
+  cursor: pointer;
+  /* cursor: ; */
+  /* position: relative; */
+}
+
+a {
+  color: chocolate;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: fuchsia;
+  text-decoration: underline;
+}
+
+a:focus {
+  color: yellow;
+}
+
+a:visited {
+  color: greenyellow;
+}
+
+h1:hover {
+  color: rgb(32, 218, 94);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  display: block;
+  border-radius: 50%;
+}
+
+/* h1::after {
+  content: "Awesome!!";
+} */
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  margin: 1rem;
+}
+
+.absolute {
+  position: absolute;
+  background-color: pink;
+  bottom: 0;
+  right: 0;
+  z-index: +1;
+}
+
+/* .fixed {
+  position: fixed;
+  bottom: 0;
+  left: 300px;
+} */
+
+/* .fixed {
+  position: fixed;
+  bottom: 50%;
+  right: 0;
+} */
+
+.material-icons.md-48 {
+  color: yellow;
+  font-size: 48px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.sticky {
+  position: sticky;
+  top: 200px;
+}
+.relative {
+  position: relative;
+  left: 200px;
+}
+
+.modal {
+  height: 50vh;
+  width: 50vw;
+  background-color: white;
+  border-radius: 5px;
+  /* position: absolute; */
+  top: 25vh;
+  left: 25vw;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modal button {
+  position: absolute;
+  bottom: 20px;
+  left: 25%;
+}
+
+/* .box:hover {
+  border-radius: 50%;
+  background-color: rgb(236, 12, 12);
+} */
+.box:focus {
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+/* 
+p:nth-child(9) {
+  color: coral;
+} If we remove the div it starts counting the children starting from the h1 element downward*/
+
+p:nth-child(2) {
+  color: coral;
+}
+
+p:nth-child(odd) {
+  color: blue;
+  text-decoration: overline;
+}
+
+p:nth-child(4n) {
+  color: yellow;
+  text-decoration: overline;
+}
+
+p:nth-child(2n + 4) {
+  color: red;
+  text-decoration: overline;
+}

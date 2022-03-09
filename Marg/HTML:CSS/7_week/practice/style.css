@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap");
+
+:root {
+  --bg-color: thistle;
+  --primary-color: aliceblue;
+  --font: "Fira Sans Condensed", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: var(--font);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

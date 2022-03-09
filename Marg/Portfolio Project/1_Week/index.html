@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta author="Eric Coles" content="Full Stack Web Developer Portfolio" />
     <!-- google fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,31 +12,56 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./gallery.html" />
     <!-- google fonts end -->
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="http://source.unsplash.com/wn57cSQ7VzI"
+    />
+    <title>Coles Portfolio</title>
   </head>
   <body>
     <header>
-      <h1>My Portfolio</h1>
-      <a href="#Projects">Projects</a>
-      <br />
-      <a href="#About me">About me</a>
-      <br />
-      <a href="#Skills">Skills</a>
-      <br />
-      <a href="https://en.bc.fi" target="_blank">More about Business College</a>
-      <br />
-      <h2 id="Projects">Projects</h2>
+      <div class="day">
+        <h1><a href="#">Cool Coles</a></h1>
+      </div>
+      <nav class="navi">
+        <ul>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#About">About Me</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="./gallery.html">gallery</a></li>
+          <li><a href="#Contact">Contact</a></li>
+          <li>
+            <a href="https://en.bc.fi/" target="_blank">More about BCH</a>
+          </li>
+        </ul>
+      </nav>
     </header>
+    <!-- <header>
+      <div class="hero-banner">
+        <div class="hero-text">
+          <h1>My Portfolio</h1>
+          <a href="#Projects">Projects</a>
+          <br />
+          <a href="#About_me">About me</a>
+          <br />
+          <a href="#Skills">Skills</a>
+          <br />
+          <a href="https://en.bc.fi" target="_blank"
+            >More about Business College</a
+          >
+          <br />
+          <h2 id="Projects">Projects</h2>
+        </div>
+      </div>
+    </header> -->
 
     <main>
-      <section id="project">
-        <img
-          src="http://source.unsplash.com/hf5KNXEuWp8"
-          height="200px"
-          width="300px"
-        />
+      <section id="Projects">
+        <img src="http://source.unsplash.com/hf5KNXEuWp8" alt="trees" />
         <br />
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
         cum praesentium aspernatur voluptatum laborum cumque earum ut voluptatem
@@ -50,14 +76,9 @@
         aliquid fugiat provident! Labore, suscipit?
       </section>
 
-      <section id="about">
+      <section id="About">
         <h2>About me</h2>
-        <img
-          src="http://source.unsplash.com/CM1oVEUzsNM"
-          alt="huskey"
-          height="300px"
-          width="300px"
-        />
+        <img src="http://source.unsplash.com/CM1oVEUzsNM" alt="huskey" />
         <!-- <img
       src="https://thumbs.dreamstime.com/z/rudolph-red-nosed-reindeer-crossing-sign-text-road-trees-background-105555330.jpg"
       height="200px"
@@ -80,12 +101,7 @@
 
       <section id="Skills">
         <h2>Skills</h2>
-        <img
-          src="http://source.unsplash.com/FVWL3I5Y3HQ"
-          alt="coffee laptop"
-          height="200px"
-          width="300px"
-        />
+        <img src="http://source.unsplash.com/FVWL3I5Y3HQ" alt="coffee laptop" />
         <br />
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
         praesentium non numquam neque, perspiciatis earum doloremque quibusdam
@@ -100,15 +116,15 @@
         pariatur eveniet architecto consequuntur ex?
       </section>
 
-      <section id="contact_form">
+      <section id="Contact">
         <form>
           <div>
             <label for="name">Full Name *</label>
             <input type="text" name="name" id="msg-sender" size="45" />
           </div>
           <div>
-            <label for="email">company *</label>
-            <input type="email" name="email" id="msg-email" size="45" />
+            <label for="company">company *</label>
+            <input type="text" name="company" id="company" size="45" />
           </div>
           <div>
             <label for="email">Email *</label>
@@ -136,10 +152,15 @@
         <a href="https://github.com/Ericcoles" target="_blank"
           >Eric Anthony Coles (Github)</a
         >
+        <a href="https://unsplash.com/about" target="_blank"
+          >Unsplash license</a
+        >
       </p>
     </footer>
   </body>
   <!-- footer end -->
+
   <!-- link script -->
   <script src="main.js"></script>
+  <!-- link script End -->
 </html>
