@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <h1>JavaScript localStorage demo</h1>
+    <textarea id="myTextarea" rows="10" cols="80"></textarea>
+    <p></p>
+    <button onclick="mySave()">Save</button>
+    <button onclick="myLoad()">Load</button>
+    <button onclick="remove()">Remove</button>
+    <script>
+      // let us look at simple local storage example
+
+      function mySave() {
+        let myContent = document.getElementById("myTextarea").value;
+        localStorage.setItem("myContent", myContent);
+      }
+
+      function myLoad() {
+        let myContent = localStorage.getItem("myContent");
+        localStorage.setItem("name", myContent);
+      }
+
+      // mySave = () => {
+      //   addEventListener.document.getelementbyID("myTextarea");
+      // };
+
+      // myLoad = () => {};
+
+      // remove = () => {
+      //   localStorage.clear;
+      // };
+    </script>
+  </body>
+</html>
