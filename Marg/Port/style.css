@@ -1,0 +1,153 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+#mobileButton {
+  display: none;
+}
+
+/* Mobille phone */
+@media screen and (max-width: 500px) {
+}
+
+body {
+  background-color: antiquewhite;
+  color: darkred;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  --oxford-blue: #030027ff;
+  --light-slate-gray: #648ca6ff;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+
+h1:hover {
+  background-color: teal;
+  transform: scale(500%);
+  transform: rotate(360deg);
+  transition-duration: 0.01s;
+}
+
+.skillContainer {
+  background: linear-gradient(var(--blueBackground3), var(--blueBackground4));
+  padding: 100px 20px;
+}
+
+.skillsLogo {
+  font-size: 5em;
+}
+
+.logoSpace {
+  justify-content: space-evenly;
+}
+
+.logoText {
+  font-size: 2em;
+}
+
+.logoContainer {
+  margin: auto;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+/* GALLERY */
+
+.container-gallery {
+  padding: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "grid1 grid1 grid1 grid1 grid3 grid3"
+    "grid2 grid2 grid4 grid4 grid3 grid3"
+    "grid2 grid2 grid4 grid4 grid3 grid3"
+    "grid5 grid6 grid6 grid6 grid3 grid3"
+    "grid7 grid6 grid6 grid6 grid9 grid9"
+    "grid8 grid6 grid6 grid6 grid9 grid9";
+  grid-auto-rows: 1fr;
+  gap: 0.5rem;
+}
+
+.container-gallery {
+  padding: 1rem;
+}
+
+.grids {
+  min-height: 100px;
+  color: transparent;
+  background-color: aquamarine;
+}
+
+.grid1 {
+  grid-area: grid1;
+  background-image: url("http://source.unsplash.com/Yg_sNKOiXvY");
+  background-size: cover;
+  background-position: center;
+}
+
+.grid2 {
+  grid-area: grid2;
+  background-image: url("http://source.unsplash.com/66zrT0dJ7Mc");
+  background-size: cover;
+  background-position: center;
+}
+
+.grid3 {
+  grid-area: grid3;
+  background-image: url("http://source.unsplash.com/qBT44OJWNd8");
+  background-size: cover;
+  background-position: center;
+}
+
+.grid4 {
+  grid-area: grid4;
+  background-image: url("http://source.unsplash.com/8a7ZTFKax_I");
+  background-size: cover;
+  background-position: top;
+}
+
+.grid5 {
+  grid-area: grid5;
+  background-image: url("http://source.unsplash.com/8Ou3EZmTMWA");
+  background-size: cover;
+}
+
+.grid6 {
+  grid-area: grid6;
+  background-image: url("http://source.unsplash.com/_jdB5skW6W8");
+  background-size: cover;
+  background-position: center;
+}
+
+.grid7 {
+  grid-area: grid7;
+  background-image: url("http://source.unsplash.com/ZqYPM8i60F8");
+  background-size: cover;
+  background-position: top;
+}
+
+.grid8 {
+  grid-area: grid8;
+  background-image: url("http://source.unsplash.com/MVIqwQvkwG4");
+  background-size: cover;
+  background-position: center;
+}
+
+.grid9 {
+  grid-area: grid9;
+  background-image: url("http://source.unsplash.com/iQRKBNKyRpo");
+  background-size: cover;
+  background-position: center;
+}

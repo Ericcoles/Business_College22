@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
+
+:root {
+  /* --bg-color: linear-gradient(red, yellow, green); */
+  --bg-color: pink;
+  --primary-color: orange;
+  font-family: "Spartan", sans-serif;
+}
+
+.first-task {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  border: 1px black;
+  background-color: var(--primary-color);
+}
+
+.first-task:hover {
+  /* height: 125px;
+  width: 125px; */
+  transform: scale(112%);
+  background-color: blue;
+  transition-duration: 2s;
+}
+
+.second-task {
+  height: 110px;
+  width: 110px;
+  background-color: var(--primary-color);
+}
+
+.second-task:hover {
+  background-color: blue;
+  transform: rotate(180deg);
+  transition-duration: 5s;
+}
+
+.third-task {
+  height: 110px;
+  width: 110px;
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.third-task:hover {
+  transform: scale(75%);
+  color: black;
+  transition-duration: 5s;
+}
+
+.fifth-task {
+}

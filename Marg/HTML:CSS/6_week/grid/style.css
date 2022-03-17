@@ -48,7 +48,7 @@ body {
 
 /* Mobille phone */
 @media screen and (max-width: 500px) {
-  .grid-container {
+  .grid-container2 {
     grid-template-columns: 1fr;
     /* grid-template-columns: repeat(1, 1fr); */
   }
