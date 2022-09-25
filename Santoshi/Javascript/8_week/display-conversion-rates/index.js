@@ -55,8 +55,50 @@ fetch/FetchWrapper related code after you get it to work the first time. */
 // Test it out in the browser tab.
 
 const API =
-  "https://v6.exchangerate-api.com/v6/0273326d6478c990899e7dca/latest/USD";
+  "https://v6.exchangerate-api.com/v6/0273326d6478c990899e7dca/latest/";
 
+let baseCurrency = document.querySelector("#base-currency"); // The value is always 1
+// let results = document.querySelector(".result");
+let targetCurrency = document.querySelector("#target-currency"); // Always changing
+let conversionResults = document.querySelector("#conversion-result");
+// baseCurrency.selectedIndex
+// ${baseCurrency.value}
 function getConversionRates() {
-  console.log("New currency chosen");
+  fetch(`${API}` + baseCurrency.value)
+    .then((response) => response.json())
+    .then((currency) => {
+      let rate = currency.conversion_rates[targetCurrency.value];
+      // results.textContent =
+      //   "Testing" +
+      //   "1" +
+      //   `${baseCurrency.value}` +
+      //   `= ${rate}` +
+      //   ` ${targetCurrency.value} `;
+      conversionResults.textContent = `${rate}`;
+    });
 }
+// getConversionRates(); WORKS
+baseCurrency.addEventListener("change", getConversionRates);
+targetCurrency.addEventListener("change", getConversionRates);
+
+// my Code
+// const API =
+//   "https://v6.exchangerate-api.com/v6/0273326d6478c990899e7dca/latest/USD";
+
+// let basecurrency = document.getElementById("base-currency");
+// let foreigncurrency = document.getElementById("target-currency");
+// let result = document.getElementById("conversion-result");
+
+// function getConversionRates() {
+// fetch(`${API}`)
+//     .then((res) => res.json())
+//     .then((currency) => {
+//       console.log(currency);
+//     });
+//   // console.log("New currency selected");
+
+//   getConversionRates();
+
+//   result.innerhtml = basecurrency.value + "New currency selected";
+//   console.log(basecurrency.value);
+// }
